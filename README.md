@@ -2,6 +2,8 @@
 
 The greatest thing nobody ever wanted...
 
+<img src="/Images/LightsAdded.jpg" width="250">
+
 
 ### Table of Contents
 - [Concept](#concept)
