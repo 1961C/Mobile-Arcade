@@ -13,7 +13,7 @@
   * [Power](#power)
 * [Instructions](#instructions)
 * [Results](#results)
-* .[Improvements].(#improvements)
+* [Improvements](#improvements)
 
 
 
