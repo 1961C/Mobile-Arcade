@@ -2,7 +2,7 @@
 
 The greatest thing nobody ever wanted...
 
-![Mobile Arcade]({{ site.url }}/Mobile-Arcade/assets/LightsAdded.png)
+![Mobile Arcade](assets/LightsAdded.jpg)
 
 
 ### Table of Contents
