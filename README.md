@@ -66,7 +66,7 @@ Breakout board design.
 
 <img src="/Images/mBEDBreakoutBoard.png" width="350">
 
-Completed breatout board.
+Completed breakout board.
 
 <img src="/Images/mBEDBreakoutBoardDone.jpg" width="350">
 
@@ -74,6 +74,10 @@ The following library was used to control the Dual-Channel motor driver:
 [Motor Driver Library](https://os.mbed.com/users/abraha2d/code/Motor/)
 
 [All code for the mBED can be found here.](https://os.mbed.com/users/abraha2d/code/MobileArcade/file/)
+
+Wheels were added to both sides of the motors to improve stability and ensure traction. Since the rear contact point is a slider, more traction is required for turns. Below is an image with the left two wheels in place.
+
+<img src="/Images/ArcadeWheels.jpg" width="350">
 
 ### LEDs
 
