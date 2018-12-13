@@ -25,6 +25,16 @@ The Mobile Arcade was designed to incorporate a retro gaming experience with qua
 
 The design of the mobile arcade was divided into distinct subsystems which were later interfaces. These subsystems included the physical enclosure, the arcade emulator, and the mobility driver. Each of these systems are outlined here.
 
+The following block diagram illustrates all components of the arcade system:
+<img src="/Images/BlockDiagram.png" width="350">
+* Raspberry Pi: Main processor & arcade game emulator, user interface
+* GPIO Interfaces: Joystick, buttons controller
+* mBED: Microcontroller in charge of lights, remote control and drive system
+* Bluetooth Bridge: Communication between remote control phone and the mBED
+* Dual-Channel Motor Driver: Motor driver for running the tank-drive motors
+* LED Strips: Decorative lights, ran by the mBED
+* Power: Li-Po battery and regulator for all components
+
 #### _Physical Enclosure_
 
 The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The structure was set as 3/32in clear acrylic sheets.
