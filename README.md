@@ -1,6 +1,7 @@
 ![Mobile Arcade](assets/MobileArcade.jpg){:height="480px"}
 
 
+
 ### Table of Contents
 * [Concept](#concept)
 * [System Design](#system-design)
@@ -12,6 +13,8 @@
   * [Power System](#power-system)
 * [Results](#results)
 
+
+
 ### Concept
 
 > "Develop a mobile arcade cabinet that can be controlled over Bluetooth to enable ultimate portability and usability, while maintaining retro charm."
@@ -21,6 +24,8 @@ The Mobile Arcade was designed to incorporate a retro gaming experience with a q
 2. Visually pleasing enclosure with a retro feel
 3. Interactive lighting
 4. Basic Bluetooth-controlled mobility
+
+
 
 ### System Design
 
@@ -37,33 +42,36 @@ The following block diagram illustrates all components of the arcade system:
 * Dual-channel Motor Driver: Controls 2 motors in a tank-drive configuration
 * Power: Li-Po battery and 5V regulator supply power to all components
 
+
+
 ### Physical Enclosure
 
 The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The structure was created with 3/32in clear acrylic sheets.
 
-![CAD design](assets/ArcadeCAD.png){:height="480px"}
+![CAD design](assets/ArcadeCAD.png)
 
 The overall shape of the enclosure resembles that of a standard arcade cabinet, however there are a few notable exceptions. The design is much simpler than standard cabinets, reducing the number of distinct components that need to be fabricated for the system to fit together. Additionally, the cabinet incorporates mounting holes specifically designed to accommodate geared drive motors. Two motors can be fixed near the front of the cabinet, while a rounded skid drags at the rear. This produces a "tank drive" configuration which allows the enclosure to maneuver deftly around its environment.
 
 
 
 ![Before cabinet assembly](assets/ArcadeCabinetPaint.jpg){:height="480px"}
+
 The enclosure after laser cutting and two coats of dark blue spray paint
 
 
 
-![Trial fit](assets/TrialFit.jpg){:height="480px"}
-Trial fit with the control components in place
+![Trial fit](assets/TrialFit.jpg){:height="360px"}
+![Interior view](assets/InteriorView.jpg){:height="360px"}
 
-
-
-![Interior view](assets/InteriorView.jpg){:height="480px"}
+Trial fit with the components in place
 
 
 
 ### Arcade Emulator
 
 **TODO** Raspberry Pi stuff
+
+
 
 ### Mbed PCB
 
@@ -74,18 +82,12 @@ All code for the Mbed can be found [here](https://os.mbed.com/users/abraha2d/cod
 
 
 ![Mbed PCB design](assets/MbedPCBLayout.png){:height="480px"}
-Mbed PCB design
-
-
-
-![Completed Mbed PCB](assets/MbedPCB.jpg){:height="480px"}
-Completed PCB
 
 
 
 #### Drive System
 
-The following library was used to control the Dual-channel motor driver. **TODO Kevin** Adapted from simon/Motor, added short braking
+The following library was used to control the dual-channel motor driver. **TODO Kevin** Adapted from simon/Motor, added short braking
 [Extended Motor driver library](https://os.mbed.com/users/abraha2d/code/Motor/)
 
 Wheels were added to both sides of the motors to improve stability and ensure traction. Since the rear contact point is a slider, more traction is required for turns.
@@ -93,6 +95,7 @@ Wheels were added to both sides of the motors to improve stability and ensure tr
 
 
 ![Wheel setup](assets/ArcadeWheels.jpg){:height="480px"}
+
 Left dual-wheel setup
 
 
@@ -112,7 +115,6 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
 
 
 ![Wiring harness](assets/WireHarness.jpg){:height="480px"}
-Wiring harness setup
 
 
 
