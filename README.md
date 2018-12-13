@@ -7,9 +7,10 @@ The greatest thing nobody ever wanted...
 
 ### Table of Contents
 - [Concept](#concept)
-- [System Design](#desigb)
-- [Implementation](#implementation)
-- [Results](#results)
+- [System Design](#systemdesign)
+- [Physical Enclosure](#physicalenclosure)
+- [Arcade Emulator](#arcadeemulator)
+- [mBED Breakout & Drive System](#mbedbreakout&drivesystem)
 
 ### Concept
 
@@ -35,7 +36,7 @@ The following block diagram illustrates all components of the arcade system:
 * LED Strips: Decorative lights, ran by the mBED
 * Power: Li-Po battery and regulator for all components
 
-#### _Physical Enclosure_
+### Physical Enclosure
 
 The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The structure was set as 3/32in clear acrylic sheets.
 
@@ -46,11 +47,11 @@ The overall shape of the enclosure resembles that of a standard arcade cabinet, 
 <img src="/Images/ArcadeCabinetPaint.jpg" width="250">
 The enclosure after laser cutting and two cotes of dark blue spray paint.
 
-#### _Arcade Emulator_
+### Arcade Emulator
 
 Raspberry pi stuff here
 
-#### _mBED Breakout & Drive System_
+### mBED Breakout & Drive System
 
 In order to connect the mBED, Bluetooth Bridge, and Dual-Channel motor driver together, a single-layer breakout board was created and fabricated. Side-plugs were soldered to allow the motors and LEDs, as well as an auxiliary power source.
 
@@ -62,7 +63,7 @@ Completed breatout board.
 
 <img src="/Images/mBEDBreakoutBoardDone.jpg" width="350">
 
-#### _Power System_
+### Power System
 
 The arcade is powered from a large lithium-ion battery pack. A 5V, 3A regulator is used to provide power for the Raspberry Pi, mBED system, and the motors. The LCD contains an internal regulator, and is able to plug directly into the battery without further regulation.
 
