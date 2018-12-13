@@ -16,12 +16,10 @@ The greatest thing nobody ever wanted...
 > "To develop a mobile arcade cabinet that can be controlled over Bluetooth to enable ultimate portability and usability, while maintaining retro charm."
 
 The Mobile Arcade was designed to incorporate a retro gaming experience with quarkey mobile chassis. The original idea was centered around a table top arcade experience with additional entertainment features, including vibrent and responsive lighting. In order to better suit and entertain the target audiance (children aged 9 through 14), mobility was incorporated as well. With this in mind, the following design requirements were set:
-
-1 Fully functional, single player, arcade system
-* Ability to play NES and Atari games
-2 Visually pleasing enclosure with a retro feel
-3 Interactive lighting
-4 Basic Bluetooth-controlled mobility 
+1. Fully functional, single player, arcade system (ability to play NES and Atari games)
+2. Visually pleasing enclosure with a retro feel
+3. Interactive lighting
+4. Basic Bluetooth-controlled mobility 
 
 ### System Design
 
