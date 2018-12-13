@@ -62,11 +62,27 @@ The overall shape of the enclosure resembles that of a standard arcade cabinet, 
 ![Trial fit](assets/TrialFit.jpg){:height="355px"}
 ![Interior view](assets/InteriorView.jpg){:height="355px"}
 
-
+Holes to fit the arcade controls (joystick and buttons) were included. Details about each of these is included in the next section.
 
 ### Arcade Emulator
 
-**TODO** Raspberry Pi stuff
+The emulation portion of the mobile arcade was split into two portions: the physical controls and the emulation software.
+
+#### _Arcade Controls_
+
+
+
+#### _Emulation Software_
+
+The common emulation software [RetroPie](https://retropie.org.uk/) was chosen for this project. It works seamlessly with the raspberry pi, the primary processor on the mobile arcade, and it offers decent functionality. Instilation is made fairly easy by the fact that the Retropie foundation provides a disk image for the raspberry pi. The steps that were followed for installing the software are as follows:
+
+1. Download the Retropie disk image from their website
+2. Burn the image to the raspberry pi's SD card
+3. Boot the system and connect it to the ethernet using wifi or ethernet
+4. Follow the automatic keybindings dialog
+5. Copy ROM files to the approperate location
+
+Further details about this process can be found on the [RetroPie](https://retropie.org.uk/) website.
 
 
 
@@ -93,7 +109,6 @@ A custom Mbed library was used to control the motor driver. The basic library (l
 
 
 ![Wheel setup](assets/ArcadeWheels.jpg){:width="640px"}
-
 
 
 #### Lighting
@@ -133,10 +148,12 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
 
 ### Raspberry Pi setup
 
-* Follow RetroPie setup (located [here]())
+* Follow RetroPie setup (located [here](retropie.org.uk))
   * **TODO** Add any specific notes
-* Replace config files
-  * **TODO** Which config files?
+* Add runcommand scripts
+  * Details about the runcommand scripts can be found [here](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand#runcommand-onstart-and-runcommand-onend-scripts)
+  * Copy the files from '/runcommnads' in this repository to '/opt/retropie/configs/all/' on the raspberry pi
+  * Plug the MBED into the pi using USB and ensure that the port (/dev/ttyXXXX) is correct in both runcommand files
 
 
 
