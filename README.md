@@ -89,16 +89,13 @@ All code for the Mbed can be found [here](https://os.mbed.com/users/abraha2d/cod
 
 #### Drive System
 
-The following library was used to control the dual-channel motor driver. **TODO Kevin** Adapted from simon/Motor, added short braking
-[Extended Motor driver library](https://os.mbed.com/users/abraha2d/code/Motor/)
+The drive system consists of two motors in a tank-drive configuration, with a rear skid for stability. Wheels were added to both sides of the motors (2 visible outside, 2 hidden inside). Not only does this improve stability and ensure traction, it also adds a level of redundancy to the drive system.
 
-Wheels were added to both sides of the motors to improve stability and ensure traction. Since the rear contact point is a slider, more traction is required for turns.
+A custom Mbed library was used to control the motor driver. The basic library (located [here](https://os.mbed.com/users/simon/code/Motor/)) was extended to add a short brake feature. The extended motor driver library can be found [here](https://os.mbed.com/users/abraha2d/code/Motor/).
 
 
 
 ![Wheel setup](assets/ArcadeWheels.jpg){:height="480px"}
-
-Left dual-wheel setup
 
 
 
