@@ -29,13 +29,25 @@ The design of the mobile arcade was divided into distinct subsystems which were 
 
 The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The structure was set as 3/32in clear acrylic sheets.
 
-<img src="/Images/ArcadeCAD.png" width="250">
+<img src="/Images/ArcadeCAD.png" width="350">
 
 The overall shape of the enclosure resembles that of a standard arcade cabinet, however there are a few notable exceptions. The design is much simpler than standard cabinets, reducing the number of distinct components that need to be fabricated for the system to fit together. Additionally, the cabinet incorporates mounting holes specifically designed to accommodate drive motors. Two motors can be fixed near the front of the cabinet, while a rounded skid drags at the rear. This produces a "tank drive" configuration which allows the enclosure to maneuver around its environment.
+
+<img src="/Images/ArcadeCabinetPaint.jpg" width="250">
+The enclosure after laser cutting and two cotes of dark blue spray paint.
 
 #### _Arcade Emulator_
 
 Raspberry pi stuff here
+
+#### _Drive System_
+
+#### _Power System_
+
+The arcade is powered from a large lithium-ion battery pack. A 5V, 3A regulator is used to provide power for the Raspberry Pi, mBED system, and the motors. The LCD contains an internal regulator, and is able to plug directly into the battery without further regulation.
+
+The image below contains the battery and regulator plugged into the mBED breakout board.
+<img src="/Images/WireHarness.jpg" width="350">
 
 ### Markdown
 
