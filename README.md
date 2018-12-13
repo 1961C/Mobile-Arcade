@@ -63,6 +63,19 @@ Completed breatout board.
 
 <img src="/Images/mBEDBreakoutBoardDone.jpg" width="350">
 
+The following library was used to control the Dual-Channel motor driver:
+[Motor Driver Library](https://os.mbed.com/users/abraha2d/code/Motor/)
+
+[All code for the mBED can be found here.](https://os.mbed.com/users/abraha2d/code/MobileArcade/file/)
+
+### LEDs
+
+[Dotstar LEDs](https://www.adafruit.com/product/2239?length=1) were used to decorate the Arcade, and were chosen due to the relaxed timing requironments, allowing relativaly easy interface with the mBED. A simple library was used and is linked below:
+
+[Custom Dotstar mBED library.](https://os.mbed.com/users/abraha2d/code/APA102/)
+
+Code was written to accept input from the Raspberry Pi to syncronize lighting effects to certain events in the Emulator. For example, on emulation startup, a startup animation is shown on the LEDs. Other effects were added for when games are started and stopped. The Raspberry Pi sends serial commands via USB to the mBED.
+
 ### Power System
 
 The arcade is powered from a large lithium-ion battery pack. A 5V, 3A regulator is used to provide power for the Raspberry Pi, mBED system, and the motors. The LCD contains an internal regulator, and is able to plug directly into the battery without further regulation.
