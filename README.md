@@ -98,11 +98,12 @@ A custom Mbed library was used to control the motor driver. The basic library (l
 
 #### Lighting
 
-[Dotstar LED strips](https://www.adafruit.com/product/2239) were used to implement the interactive lighting features of the Mobile Arcade. These were chosen over NeoPixels due to the standard SPI interface and relaxed timing requirements of the integrated APA102 chip, allowing for relatively easy interface with the Mbed. Since no official library was available for interfacing with the APA102, a simple library was created that fulfilled our needs.
+[Dotstar LED strips](https://www.adafruit.com/product/2239) were used to implement the interactive lighting features of the Mobile Arcade. These were chosen over NeoPixels due to the standard SPI interface and relaxed timing requirements of the integrated APA102 chip, allowing for relatively easy interface with the Mbed. Since no official library was available for interfacing with the APA102, a simple library was created that fulfilled our needs (available [here](https://os.mbed.com/users/abraha2d/code/APA102/)).
 
-[Custom APA102 Mbed library](https://os.mbed.com/users/abraha2d/code/APA102/)
+The Mbed controls the LED strips in a way that simulates the actions of a real-world vehicle. Simulated lighting effects include headlights, foglights, blinkers, tail/brake lights, reverse lights, and underglow. These lighting effects are controlled in an appropriate way in relation to the movement of the enclosure.
 
-Code was written to accept input from the Raspberry Pi over USB serial to synchronize lighting effects to certain events in the arcade emulator. For example, on emulation startup, a startup animation is shown on the LEDs. Other effects include a similar shutdown animation, as well as lighting theme changes when games are started/stopped.
+The Mbed also accepts input from the Raspberry Pi over USB serial to synchronize lighting effects to certain events in the arcade emulator. For example, on emulation startup, a startup animation is shown on the LEDs. Other effects include a similar shutdown animation, as well as lighting theme changes when games are started/stopped.
+
 
 
 ### Power
