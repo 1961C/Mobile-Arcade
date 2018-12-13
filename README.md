@@ -78,14 +78,14 @@ For controlling the arcade, a standard arcade joystick configuration with four a
 * [Connection Wires](https://www.adafruit.com/product/1949)
 * [Speaker](https://www.adafruit.com/product/1314)
 
-The joystick and buttons each have a specific location they fit within the enclosure, and were chosen before the CAD model was finalized. The control bonnet connects directly to the GPIO header on the raspberry pi and allows each of the other elements to easily interface with the emulation software. 
+The joystick and buttons each have a specific location they fit into within the enclosure, and were chosen before the CAD model was finalized. The control bonnet connects directly to the GPIO header on the raspberry pi and allows each of the other elements to easily interface with the emulation software. 
 
 Once each physical element is installed, [this guide](https://learn.adafruit.com/adafruit-arcade-bonnet-for-raspberry-pi) outlines the process of formally installing the Control Bonnet on the pi. In order for it to function correctly, specific software needs to be installed on the pi. This should be done after the emulation software is installed, as outlined below.
 
 
 #### _Emulation Software_
 
-The common emulation software [RetroPie](https://retropie.org.uk/) was chosen for this project. It works seamlessly with the raspberry pi, the primary processor on the mobile arcade, and it offers decent functionality. Installation is made fairly easy by the fact that the Retropie foundation provides a disk image for the raspberry pi. The steps that were followed for installing the software are as follows:
+The common emulation software [RetroPie](https://retropie.org.uk/) was chosen for this project. Retropie works seamlessly with the raspberry pi, the primary processor on the mobile arcade, and offers decent functionality. Installation is made fairly easy by the fact that the Retropie foundation provides a disk image for the raspberry pi. The steps that were followed for installing the software are as follows:
 
 1. Download the Retropie disk image from their website
 2. Burn the image to the raspberry pi's SD card
@@ -98,7 +98,7 @@ Further details about this process (excluding the Control Bonnet) can be found o
 
 ### Low-level Control
 
-The Mbed microcontroller was used to realize low-level lighting and drive system control. In order to neatly connect the Mbed to the Bluetooth bridge, motor driver, and the LED strips, a single-layer PCB was designed in Eagle and fabricated at the Mechanical Engineering electronics lab. 90º headers were used so that the connections occupied minimal vertical space.
+The Mbed microcontroller was used to implement low-level lighting and drive system control. In order to neatly connect the Mbed to the Bluetooth bridge, motor driver, and the LED strips, a single-layer PCB was designed in Eagle and fabricated at the Mechanical Engineering electronics lab. 90º headers were used so that the connections occupied minimal vertical space.
 
 The Eagle files for the PCB can be found [here](https://github.com/1961C/Mobile-Arcade/tree/master/eagle).
 
