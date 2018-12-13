@@ -16,7 +16,7 @@ The greatest thing nobody ever wanted...
 
 > "To develop a mobile arcade cabinet that can be controlled over Bluetooth to enable ultimate portability and usability, while maintaining retro charm."
 
-The Mobile Arcade was designed to incorporate a retro gaming experience with quarkey mobile chassis. The original idea was centered around a table top arcade experience with additional entertainment features, including vibrent and responsive lighting. In order to better suit and entertain the target audiance (children aged 9 through 14), mobility was incorporated as well. With this in mind, the following design requirements were set:
+The Mobile Arcade was designed to incorporate a retro gaming experience with quirky mobile chassis. The original idea was centered around a table top arcade experience with additional entertainment features, including vibrant and responsive lighting. In order to better suit and entertain the target audience (children aged 9 through 14), mobility was incorporated as well. With this in mind, the following design requirements were set:
 1. Fully functional, single player, arcade system (ability to play NES and Atari games)
 2. Visually pleasing enclosure with a retro feel
 3. Interactive lighting
@@ -47,6 +47,14 @@ The overall shape of the enclosure resembles that of a standard arcade cabinet, 
 ![Before cabinet assembly]({{ site.url }}/assets/ArcadeCabinetPaint.jpg)
 The enclosure after laser cutting and two coats of dark blue spray paint.
 
+<img src="/Images/ArcadeCabinetPaint.jpg" width="250">
+
+Trial fit with the control components in place.
+
+<img src="/Images/TrialFit.jpg" width="350">
+
+<img src="/Images/InteriorView.jpg" width="350">
+
 ### Arcade Emulator
 
 Raspberry pi stuff here
@@ -71,13 +79,17 @@ The following library was used to control the Dual-Channel motor driver:
 
 [All code for the mBED can be found here.](https://os.mbed.com/users/abraha2d/code/MobileArcade/file/)
 
+Wheels were added to both sides of the motors to improve stability and ensure traction. Since the rear contact point is a slider, more traction is required for turns. Below is an image with the left two wheels in place.
+
+<img src="/Images/ArcadeWheels.jpg" width="350">
+
 ### LEDs
 
-[Dotstar LEDs](https://www.adafruit.com/product/2239?length=1) were used to decorate the Arcade, and were chosen due to the relaxed timing requironments, allowing relativaly easy interface with the mBED. A simple library was used and is linked below:
+[Dotstar LEDs](https://www.adafruit.com/product/2239?length=1) were used to decorate the Arcade, and were chosen due to the relaxed timing requirements, allowing relatively  easy interface with the mBED. A simple library was used and is linked below:
 
 [Custom Dotstar mBED library.](https://os.mbed.com/users/abraha2d/code/APA102/)
 
-Code was written to accept input from the Raspberry Pi to syncronize lighting effects to certain events in the Emulator. For example, on emulation startup, a startup animation is shown on the LEDs. Other effects were added for when games are started and stopped. The Raspberry Pi sends serial commands via USB to the mBED.
+Code was written to accept input from the Raspberry Pi to synchronize lighting effects to certain events in the Emulator. For example, on emulation startup, a startup animation is shown on the LEDs. Other effects were added for when games are started and stopped. The Raspberry Pi sends serial commands via USB to the mBED.
 
 ### Power System
 
@@ -89,35 +101,3 @@ Wiring harness setup
 ### Results
 
 [Demo](https://youtu.be/UGc3tqysLSs)
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/1961C/MobileArcade/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
