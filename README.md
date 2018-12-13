@@ -176,3 +176,9 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
 ## Results
 
 [Demo](https://youtu.be/UGc3tqysLSs)
+
+## Improvements
+
+* Better connection between RPi and mBed
+* Intgrate additional 5V regulator
+* Add a caster to the back of the enclosure
