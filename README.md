@@ -83,6 +83,10 @@ The arcade is powered from a large lithium-ion battery pack. A 5V, 3A regulator 
 The image below contains the battery and regulator plugged into the mBED breakout board.
 <img src="/Images/WireHarness.jpg" width="350">
 
+### Results
+
+[Demo](https://youtu.be/UGc3tqysLSs)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
