@@ -50,7 +50,15 @@ The enclosure after laser cutting and two cotes of dark blue spray paint.
 
 Raspberry pi stuff here
 
-#### _Drive System_
+#### _mBED Breakout & Drive System_
+
+In order to connect the mBED, Bluetooth Bridge, and Dual-Channel motor driver together, a single-layer breakout board was created and fabricated. Side-plugs were soldered to allow the motors and LEDs, as well as an auxiliary power source.
+
+Breakout board design.
+<img src="/Images/mBEDBreakoutBoard.png" width="350">
+
+Completed breatout board.
+<img src="/Images/mBEDBreakoutBoardDone.jpg" width="350">
 
 #### _Power System_
 
