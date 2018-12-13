@@ -1,19 +1,16 @@
-## Mobile Arcade
-
-The greatest thing nobody ever wanted...
-
 ![Mobile Arcade](assets/MobileArcade.jpg)
 
 
 ### Table of Contents
 * [Concept](#concept)
-* [System Design](#systemdesign)
-* [Physical Enclosure](#physicalenclosure)
-* [Arcade Emulator](#arcadeemulator)
-* [Mbed PCB](#Mbedpcb)
-  * [Drive System](#drivesystem)
+* [System Design](#system-design)
+* [Physical Enclosure](#physical-enclosure)
+* [Arcade Emulator](#arcade-emulator)
+* [Mbed PCB](#mbed-pcb)
+  * [Drive System](#drive-system)
   * [Lighting](#lighting)
-  * [Power System](#powersystem)
+  * [Power System](#power-system)
+* [Results](#results)
 
 ### Concept
 
