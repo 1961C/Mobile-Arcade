@@ -44,8 +44,15 @@ The enclosure was designed using Dassault Systems’ Solid Works. Each portion o
 
 The overall shape of the enclosure resembles that of a standard arcade cabinet, however there are a few notable exceptions. The design is much simpler than standard cabinets, reducing the number of distinct components that need to be fabricated for the system to fit together. Additionally, the cabinet incorporates mounting holes specifically designed to accommodate drive motors. Two motors can be fixed near the front of the cabinet, while a rounded skid drags at the rear. This produces a "tank drive" configuration which allows the enclosure to maneuver around its environment.
 
-<img src="/Images/ArcadeCabinetPaint.jpg" width="250">
 The enclosure after laser cutting and two cotes of dark blue spray paint.
+
+<img src="/Images/ArcadeCabinetPaint.jpg" width="250">
+
+Trial fit with the control components in place.
+
+<img src="/Images/TrialFit.jpg" width="350">
+
+<img src="/Images/InteriorView.jpg" width="350">
 
 ### Arcade Emulator
 
