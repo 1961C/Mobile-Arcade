@@ -6,14 +6,14 @@ The greatest thing nobody ever wanted...
 
 
 ### Table of Contents
-- [Concept](#concept)
-- [System Design](#systemdesign)
-- [Physical Enclosure](#physicalenclosure)
-- [Arcade Emulator](#arcadeemulator)
-- [Mbed PCB](#Mbedpcb)
-  - [Drive System](#drivesystem)
-  - [Lighting](#lighting)
-  - [Power System](#powersystem)
+* [Concept](#concept)
+* [System Design](#systemdesign)
+* [Physical Enclosure](#physicalenclosure)
+* [Arcade Emulator](#arcadeemulator)
+* [Mbed PCB](#Mbedpcb)
+  * [Drive System](#drivesystem)
+  * [Lighting](#lighting)
+  * [Power System](#powersystem)
 
 ### Concept
 
@@ -32,11 +32,11 @@ The design of the mobile arcade was divided into distinct subsystems: the physic
 The following block diagram illustrates all components of the arcade system:
 ![Block Diagram](assets/BlockDiagram.png)
 * Raspberry Pi: Main processor
-** Handles arcade game emulator and UI
-** Interfaces with joystick and buttons
+  * Handles arcade game emulator and UI
+  * Interfaces with joystick and buttons
 * Mbed LPC1768: Secondary processor
-** Handles lighting (LED strips)
-** Handles drive system (remotely commanded via the Bluetooth bridge)
+  * Handles lighting (LED strips)
+  * Handles drive system (remotely commanded via the Bluetooth bridge)
 * Dual-channel Motor Driver: Controls 2 motors in a tank-drive configuration
 * Power: Li-Po battery and 5V regulator supply power to all components
 
