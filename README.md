@@ -1,4 +1,4 @@
-![Mobile Arcade](assets/MobileArcade.jpg)
+![Mobile Arcade](assets/MobileArcade.jpg?s=350)
 
 
 ### Table of Contents
