@@ -7,7 +7,7 @@
 * [System Design](#system-design)
   * [Physical Enclosure](#physical-enclosure)
   * [Arcade Emulator](#arcade-emulator)
-  * [Mbed](#mbed)
+  * [Low-level Control](#low-level-control)
     * [Drive System](#drive-system)
     * [Lighting](#lighting)
   * [Power](#power)
@@ -70,7 +70,7 @@ The overall shape of the enclosure resembles that of a standard arcade cabinet, 
 
 
 
-### Mbed
+### Low-level Control
 
 The Mbed microcontroller was used to realize low-level lighting and drive system control. In order to neatly connect the Mbed to the Bluetooth bridge, motor driver, and the LED strips, a single-layer PCB was designed in Eagle and fabricated at the Mechanical Engineering electronics lab. 90º headers were used so that the connections occupied minimal vertical space.
 
