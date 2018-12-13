@@ -7,7 +7,7 @@ The greatest thing nobody ever wanted...
 
 ### Table of Contents
 - [Concept](#concept)
-- [Design](#desigb)
+- [System Design](#desigb)
 - [Implementation](#implementation)
 - [Results](#results)
 
@@ -22,6 +22,20 @@ The Mobile Arcade was designed to incorporate a retro gaming experience with qua
 2 Visually pleasing enclosure with a retro feel
 3 Interactive lighting
 4 Basic Bluetooth-controlled mobility 
+
+### System Design
+
+The design of the moble arcade was divided into distinct subsystems which were later interfaces. These subsystems included the physical enclosure, the arcade emulator, and the mobility driver. Each of these systems are outlined here.
+
+#### _Physical Enclosure_
+
+The enclosure was designed using Dassault Systems's Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The sturcture was set as 3/32in clear acrylic sheets.
+
+<img src="/Images/ArcadeCAD.png" width="250">
+
+#### _Arcade Emulator_
+
+Raspberry pi stuff here
 
 ### Markdown
 
