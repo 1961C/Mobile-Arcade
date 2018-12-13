@@ -66,25 +66,34 @@ Holes to fit the arcade controls (joystick and buttons) were included. Details a
 
 ### Arcade Emulator
 
-The emulation portion of the mobile arcade was split into two portions: the physical controls and the emulation software.
+The emulation portion of the mobile arcade was split into two portions: the physical controls and the emulation software. The raspberry pi acts as the emulation computer for this project.
 
 #### _Arcade Controls_
 
+For controlling the arcade, a standard arcade joystick configuration with four additional buttons was chosen. The following parts were aquired from Adafruit to accomplish this:
 
+* [Joystick](https://www.adafruit.com/product/480)
+* [Button](https://www.adafruit.com/product/471)
+* [Control Bonnet](https://www.adafruit.com/product/3422)
+* [Connection Wires](https://www.adafruit.com/product/1949)
+* [Speaker](https://www.adafruit.com/product/1314)
+
+The joystick and buttons each have a specific location they fit within the enclosure, and were chosen before the CAD model was finalized. The control bonnet connects directly to the GPIO header on the raspberry pi and allows each of the other elements to easilly interface with the emulation software. 
+
+Once each physical element is installed, [this guide](https://learn.adafruit.com/adafruit-arcade-bonnet-for-raspberry-pi) outlines the process of formally installing the Control Bonnet on the pi. In order for it to function correctly, specific software needs to be installed on the pi. This should be done after the emulation software is installed, as outlined below.
 
 #### _Emulation Software_
 
-The common emulation software [RetroPie](https://retropie.org.uk/) was chosen for this project. It works seamlessly with the raspberry pi, the primary processor on the mobile arcade, and it offers decent functionality. Instilation is made fairly easy by the fact that the Retropie foundation provides a disk image for the raspberry pi. The steps that were followed for installing the software are as follows:
+The common emulation software [RetroPie](https://retropie.org.uk/) was chosen for this project. It works seamlessly with the raspberry pi, the primary processor on the mobile arcade, and it offers decent functionality. Installation is made fairly easy by the fact that the Retropie foundation provides a disk image for the raspberry pi. The steps that were followed for installing the software are as follows:
 
 1. Download the Retropie disk image from their website
 2. Burn the image to the raspberry pi's SD card
 3. Boot the system and connect it to the ethernet using wifi or ethernet
-4. Follow the automatic keybindings dialog
-5. Copy ROM files to the approperate location
+4. Install the Control Bonnet software (Refer to previous section)
+5. Follow the automatic key-bindings dialog
+6. Copy ROM files to the appropriate location
 
-Further details about this process can be found on the [RetroPie](https://retropie.org.uk/) website.
-
-
+Further details about this process (excluding the Control Bonnet) can be found on the [RetroPie](https://retropie.org.uk/) website.
 
 ### Low-level Control
 
@@ -132,7 +141,7 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
 ### Hardware setup
 
 * Wiring harness
-  * **TODO** Details
+  * TODO
 * Mbed PCB wiring
   * Connect 5V regulator output to power input
   * Connect DotStar LED strips to LED strip outputs
@@ -140,7 +149,9 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
   * Insert Mbed, Bluetooth bridge, and motor driver in appropriate slots
   * Connect Mbed to Raspberry Pi with a USB cable
 * Raspberry Pi Arcade Bonnet wiring
-  * **TODO** Details
+  * Attach each button to one of the wire harness JST connector leads
+  * Connect all buttons and the joystick to the Adafruit control bonnet
+  * Using speaker wire, attach the speaker to the speaker header on the
 
 ### Mbed setup
 
@@ -154,8 +165,6 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
   * Details about the runcommand scripts can be found [here](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand#runcommand-onstart-and-runcommand-onend-scripts)
   * Copy the files from '/runcommnads' in this repository to '/opt/retropie/configs/all/' on the raspberry pi
   * Plug the MBED into the pi using USB and ensure that the port (/dev/ttyXXXX) is correct in both runcommand files
-
-
 
 ## Results
 
