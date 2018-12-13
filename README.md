@@ -1,4 +1,4 @@
-![Mobile Arcade](assets/MobileArcade.jpg){:width="350px"}
+![Mobile Arcade](assets/MobileArcade.jpg){:height="480px"}
 
 
 ### Table of Contents
@@ -41,17 +41,25 @@ The following block diagram illustrates all components of the arcade system:
 
 The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The structure was created with 3/32in clear acrylic sheets.
 
-![CAD design](assets/ArcadeCAD.png)
+![CAD design](assets/ArcadeCAD.png){:height="480px"}
 
 The overall shape of the enclosure resembles that of a standard arcade cabinet, however there are a few notable exceptions. The design is much simpler than standard cabinets, reducing the number of distinct components that need to be fabricated for the system to fit together. Additionally, the cabinet incorporates mounting holes specifically designed to accommodate geared drive motors. Two motors can be fixed near the front of the cabinet, while a rounded skid drags at the rear. This produces a "tank drive" configuration which allows the enclosure to maneuver deftly around its environment.
 
-![Before cabinet assembly]({{ site.url }}/assets/ArcadeCabinetPaint.jpg)
-The enclosure after laser cutting and two coats of dark blue spray paint.
 
-![Trial fit](assets/TrialFit.jpg)
-Trial fit with the control components in place.
 
-![Interior view](assets/InteriorView.jpg)
+![Before cabinet assembly](assets/ArcadeCabinetPaint.jpg){:height="480px"}
+The enclosure after laser cutting and two coats of dark blue spray paint
+
+
+
+![Trial fit](assets/TrialFit.jpg){:height="480px"}
+Trial fit with the control components in place
+
+
+
+![Interior view](assets/InteriorView.jpg){:height="480px"}
+
+
 
 ### Arcade Emulator
 
@@ -61,22 +69,33 @@ Trial fit with the control components in place.
 
 In order to neatly connect the Mbed to the Bluetooth bridge, motor driver, and the LED strips, a single-layer PCB was designed and fabricated. 90º headers were used so that the connections occupied minimal space.
 
-![Mbed PCB design](assets/MbedPCBLayout.png)
+All code for the Mbed can be found [here](https://os.mbed.com/users/abraha2d/code/MobileArcade/file/).
+
+
+
+![Mbed PCB design](assets/MbedPCBLayout.png){:height="480px"}
 Mbed PCB design
 
-![Completed Mbed PCB](assets/MbedPCB.jpg)
+
+
+![Completed Mbed PCB](assets/MbedPCB.jpg){:height="480px"}
 Completed PCB
 
-All code for the Mbed can be found [here](https://os.mbed.com/users/abraha2d/code/MobileArcade/file/).
+
 
 #### Drive System
 
 The following library was used to control the Dual-channel motor driver. **TODO Kevin** Adapted from simon/Motor, added short braking
 [Extended Motor driver library](https://os.mbed.com/users/abraha2d/code/Motor/)
 
-Wheels were added to both sides of the motors to improve stability and ensure traction. Since the rear contact point is a slider, more traction is required for turns. Below is an image with the left two wheels in place.
+Wheels were added to both sides of the motors to improve stability and ensure traction. Since the rear contact point is a slider, more traction is required for turns.
 
-![Wheel setup](assets/ArcadeWheels.jpg)
+
+
+![Wheel setup](assets/ArcadeWheels.jpg){:height="480px"}
+Left dual-wheel setup
+
+
 
 #### Lighting
 
@@ -90,8 +109,12 @@ Code was written to accept input from the Raspberry Pi over USB serial to synchr
 
 The Mobile Arcade is powered using a wiring harness connected to a large lithium-ion battery pack. A 5V 3A regulator, connected the harness, is used to provide power for the Raspberry Pi, Mbed LPC1768, motors, and LED strips. The LCD is able to plug directly into the harness without further regulation. Fuses are integrated into the harness to protect sensitive components.
 
-![Wiring harness](assets/WireHarness.jpg)
+
+
+![Wiring harness](assets/WireHarness.jpg){:height="480px"}
 Wiring harness setup
+
+
 
 ### Results
 
