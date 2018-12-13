@@ -62,15 +62,15 @@ The overall shape of the enclosure resembles that of a standard arcade cabinet, 
 ![Trial fit](assets/TrialFit.jpg){:height="355px"}
 ![Interior view](assets/InteriorView.jpg){:height="355px"}
 
-Holes to fit the arcade controls (joystick and buttons) were included. Details about each of these is included in the next section.
+Holes to fit the arcade controls (joystick and buttons) and LCD screen were included. Details about each of these is covered in the next section.
 
 ### Arcade Emulator
 
-The emulation portion of the mobile arcade was split into two portions: the physical controls and the emulation software. The raspberry pi acts as the emulation computer for this project.
+The emulation portion of the mobile arcade was split into two portions: the physical controls and the emulation software. The raspberry pi acts as the emulation computer for this project. A small LCD screen is used and is mounted above the joystick. This LCD uses hdmi to connect to the pi.
 
 #### _Arcade Controls_
 
-For controlling the arcade, a standard arcade joystick configuration with four additional buttons was chosen. The following parts were aquired from Adafruit to accomplish this:
+For controlling the arcade, a standard arcade joystick configuration with four additional buttons was chosen. The following parts were acquired from Adafruit to accomplish this:
 
 * [Joystick](https://www.adafruit.com/product/480)
 * [Button](https://www.adafruit.com/product/471)
@@ -78,9 +78,10 @@ For controlling the arcade, a standard arcade joystick configuration with four a
 * [Connection Wires](https://www.adafruit.com/product/1949)
 * [Speaker](https://www.adafruit.com/product/1314)
 
-The joystick and buttons each have a specific location they fit within the enclosure, and were chosen before the CAD model was finalized. The control bonnet connects directly to the GPIO header on the raspberry pi and allows each of the other elements to easilly interface with the emulation software. 
+The joystick and buttons each have a specific location they fit within the enclosure, and were chosen before the CAD model was finalized. The control bonnet connects directly to the GPIO header on the raspberry pi and allows each of the other elements to easily interface with the emulation software. 
 
 Once each physical element is installed, [this guide](https://learn.adafruit.com/adafruit-arcade-bonnet-for-raspberry-pi) outlines the process of formally installing the Control Bonnet on the pi. In order for it to function correctly, specific software needs to be installed on the pi. This should be done after the emulation software is installed, as outlined below.
+
 
 #### _Emulation Software_
 
@@ -141,17 +142,23 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
 ### Hardware setup
 
 * Wiring harness
-  * TODO
+  * Battery power flows into a two way splitter
+    * LCD Screen is powered off of one
+    * 5V Regulator connects to the other
+  * The 5V Regulator poweres the following items
+    * Raspberry pi using a modified Micro USB Cable
+    * MBed by powering its custom PCB Directly
+    * Motors and LED scrips through the PCB
 * Mbed PCB wiring
   * Connect 5V regulator output to power input
   * Connect DotStar LED strips to LED strip outputs
   * Connect motor leads to motor outputs
   * Insert Mbed, Bluetooth bridge, and motor driver in appropriate slots
   * Connect Mbed to Raspberry Pi with a USB cable
-* Raspberry Pi Arcade Bonnet wiring
+* Raspberry Pi Arcade Bonnet wiring ([Guide](https://learn.adafruit.com/adafruit-arcade-bonnet-for-raspberry-pi/connections))
   * Attach each button to one of the wire harness JST connector leads
   * Connect all buttons and the joystick to the Adafruit control bonnet
-  * Using speaker wire, attach the speaker to the speaker header on the
+  * Using speaker wire, attach the speaker to the speaker header on the control bonnet
 
 ### Mbed setup
 
@@ -160,7 +167,7 @@ The Mobile Arcade is powered using a wiring harness connected to a large lithium
 ### Raspberry Pi setup
 
 * Follow RetroPie setup (located [here](retropie.org.uk))
-  * **TODO** Add any specific notes
+  * Install Adafrit bonnet support software (located [here](https://learn.adafruit.com/adafruit-arcade-bonnet-for-raspberry-pi/software))
 * Add runcommand scripts
   * Details about the runcommand scripts can be found [here](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand#runcommand-onstart-and-runcommand-onend-scripts)
   * Copy the files from '/runcommnads' in this repository to '/opt/retropie/configs/all/' on the raspberry pi
