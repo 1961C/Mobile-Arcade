@@ -60,8 +60,8 @@ The enclosure after laser cutting and two coats of dark blue spray paint
 
 
 
-![Trial fit](assets/TrialFit.jpg){:height="360px"}
-![Interior view](assets/InteriorView.jpg){:height="360px"}
+![Trial fit](assets/TrialFit.jpg){:height="355px"}
+![Interior view](assets/InteriorView.jpg){:height="355px"}
 
 Trial fit with the components in place
 
