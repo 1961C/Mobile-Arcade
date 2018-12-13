@@ -31,7 +31,7 @@ The Mobile Arcade was designed to incorporate a retro gaming experience with a q
 
 ## System Design
 
-The design of the mobile arcade was divided into distinct subsystems: the physical enclosure, the arcade emulator, and the low-level drive system and lighting control. Each of these systems are outlined here.
+The design of the mobile arcade was divided into distinct subsystems: the physical enclosure, the arcade emulator, the low-level drive system and lighting control. Each of these systems are outlined here.
 
 ![Block Diagram](assets/BlockDiagram.png)
 
