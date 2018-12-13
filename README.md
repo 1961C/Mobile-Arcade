@@ -47,11 +47,11 @@ The design of the mobile arcade was divided into distinct subsystems: the physic
 
 ### Physical Enclosure
 
-The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The structure was created with 3/32in clear acrylic sheets.
+The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software to ensure accurate dimensioning. The enclosure was then fabricated using 3/32" clear acrylic sheets, laser-cut at the Invention Studio.
 
 ![CAD design](assets/ArcadeCAD.png)
 
-The overall shape of the enclosure resembles that of a standard arcade cabinet, however there are a few notable exceptions. The design is much simpler than standard cabinets, reducing the number of distinct components that need to be fabricated for the system to fit together. Additionally, the cabinet incorporates mounting holes specifically designed to accommodate geared drive motors. Two motors can be fixed near the front of the cabinet, while a rounded skid drags at the rear. This produces a "tank drive" configuration which allows the enclosure to maneuver deftly around its environment.
+The overall shape of the enclosure resembles that of a standard arcade cabinet, with a few notable exceptions. The design is much simpler than standard cabinets, reducing the number of distinct components that need to be fabricated. Additionally, the cabinet incorporates mounting holes near the front specifically designed to accommodate geared drive motors. Along with the rear-mounted skid, this produces a "tank drive" configuration which allows the enclosure to maneuver deftly around its environment.
 
 
 
