@@ -47,7 +47,7 @@ The design of the mobile arcade was divided into distinct subsystems: the physic
 
 ### Physical Enclosure
 
-The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software to ensure accurate dimensioning. The enclosure was then fabricated using 3/32" clear acrylic sheets, laser-cut at the Invention Studio.
+The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software to ensure accurate dimensioning. The enclosure was then fabricated using 3/32" clear acrylic sheets and laser-cut at the Invention Studio.
 
 ![CAD design](assets/ArcadeCAD.png)
 
