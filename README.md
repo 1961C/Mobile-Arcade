@@ -1,4 +1,4 @@
-![Mobile Arcade](assets/MobileArcade.jpg?s=350)
+![Mobile Arcade](assets/MobileArcade.jpg){:width="350px"}
 
 
 ### Table of Contents
