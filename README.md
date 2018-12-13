@@ -75,9 +75,11 @@ Trial fit with the components in place
 
 ### Mbed PCB
 
-In order to neatly connect the Mbed to the Bluetooth bridge, motor driver, and the LED strips, a single-layer PCB was designed and fabricated. 90º headers were used so that the connections occupied minimal space.
+In order to neatly connect the Mbed to the Bluetooth bridge, motor driver, and the LED strips, a single-layer PCB was designed in Eagle and fabricated at the Mechanical Engineering electronics lab. 90º headers were used so that the connections occupied minimal space.
 
-All code for the Mbed can be found [here](https://os.mbed.com/users/abraha2d/code/MobileArcade/file/).
+The Eagle files for the PCB can be found [here](https://github.com/1961C/Mobile-Arcade/tree/master/eagle).
+
+All code for the Mbed can be found [here](https://os.mbed.com/users/abraha2d/code/MobileArcade/).
 
 
 
