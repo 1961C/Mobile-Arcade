@@ -55,7 +55,7 @@ The overall shape of the enclosure resembles that of a standard arcade cabinet, 
 
 
 
-![Before cabinet assembly](assets/ArcadeCabinetPaint.jpg){:height="480px"}
+![Before cabinet assembly](assets/ArcadeCabinetPaint.jpg){:width="640px"}
 
 
 
@@ -80,7 +80,7 @@ Mbed code can be found [here](https://os.mbed.com/users/abraha2d/code/MobileArca
 
 
 
-![Mbed PCB design](assets/MbedPCBLayout.png){:height="480px"}
+![Mbed PCB design](assets/MbedPCBLayout.png){:width="640px"}
 
 
 
@@ -92,7 +92,7 @@ A custom Mbed library was used to control the motor driver. The basic library (l
 
 
 
-![Wheel setup](assets/ArcadeWheels.jpg){:height="480px"}
+![Wheel setup](assets/ArcadeWheels.jpg){:width="640px"}
 
 
 
@@ -109,10 +109,6 @@ The Mbed also accepts input from the Raspberry Pi over USB serial to synchronize
 ### Power
 
 The Mobile Arcade is powered using a wiring harness connected to a large lithium-ion battery pack. A 5V 3A regulator, connected the harness, is used to provide power for the Raspberry Pi, Mbed LPC1768, motors, and LED strips. The LCD is able to plug directly into the harness without further regulation. Fuses are integrated into the harness to protect sensitive components.
-
-
-
-![Wiring harness](assets/WireHarness.jpg){:height="480px"}
 
 
 
