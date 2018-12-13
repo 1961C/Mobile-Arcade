@@ -23,13 +23,15 @@ The Mobile Arcade was designed to incorporate a retro gaming experience with qua
 
 ### System Design
 
-The design of the moble arcade was divided into distinct subsystems which were later interfaces. These subsystems included the physical enclosure, the arcade emulator, and the mobility driver. Each of these systems are outlined here.
+The design of the mobile arcade was divided into distinct subsystems which were later interfaces. These subsystems included the physical enclosure, the arcade emulator, and the mobility driver. Each of these systems are outlined here.
 
 #### _Physical Enclosure_
 
-The enclosure was designed using Dassault Systems's Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The sturcture was set as 3/32in clear acrylic sheets.
+The enclosure was designed using Dassault Systems’ Solid Works. Each portion of the seven component design was fitted together in software before fabrication was attempted. The structure was set as 3/32in clear acrylic sheets.
 
 <img src="/Images/ArcadeCAD.png" width="250">
+
+The overall shape of the enclosure resembles that of a standard arcade cabinet, however there are a few notable exceptions. The design is much simpler than standard cabinets, reducing the number of distinct components that need to be fabricated for the system to fit together. Additionally, the cabinet incorporates mounting holes specifically designed to accommodate drive motors. Two motors can be fixed near the front of the cabinet, while a rounded skid drags at the rear. This produces a "tank drive" configuration which allows the enclosure to maneuver around its environment.
 
 #### _Arcade Emulator_
 
